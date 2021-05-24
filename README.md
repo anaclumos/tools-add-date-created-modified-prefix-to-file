@@ -1,6 +1,19 @@
 # Tool: Add "Date Created, Modified" Prefix To File
 
-Tool for internal use
+## Instructions
+
+- `pip3 install -e *current_folder*`
+- On your terminal, type `dateprefix` and drag multiple files
+- Execute and enjoy
+
+Runs like the following:
+![Preview](optimized-preview.png)
+
+## Note
+
+- It should _probably_ work with all sorts of files with all sorts of denormalized filenames, but I do not make any guarantee on any sort of potential data loss.
+- Good idea to make a copy before doing anything...
+- This was made for my personal internal use; use it at your own risk.
 
 ## References
 
