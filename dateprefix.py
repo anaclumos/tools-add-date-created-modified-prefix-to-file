@@ -19,18 +19,18 @@ class termcolor:
     UNDERLINE = "\033[4m"
 
 
-tzlong = "Asia/Seoul"
-tz = "KST"
+tzlong = "America/Los_Angeles"
+tz = "PDT"
 
 
 def getTimeStamp(file_name, date_format="%y%m%d %H%M%S"):
     name = pathlib.Path(file_name)
     return (
-        datetime.datetime.fromtimestamp(
+        tz
+        + " "
+        + datetime.datetime.fromtimestamp(
             name.stat().st_mtime, timezone(tzlong)
         ).strftime(date_format)
-        + " "
-        + tz
     )
 
 
